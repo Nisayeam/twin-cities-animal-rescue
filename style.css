@@ -1,0 +1,162 @@
+/* Load the Poppins and Roboto fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/* Basic page setup */
+body {
+  margin: 0;
+  padding: 0 1rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5E9D3; /* beige */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #2E4A3B; /* green */
+}
+
+/* Make images and videos fit nicely */
+img, video {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Header area */
+header {
+  background-color: #2E4A3B;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Page title in the header needs to be white so it shows on the green */
+header h1 {
+  color: white;
+}
+
+header img {
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  color: #F5E9D3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #6FAED9;
+}
+
+/* Main content box */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  background: white;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+fieldset {
+  border: 2px solid #2E4A3B;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  color: #2E4A3B;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box; /* keeps the boxes inside the fieldset */
+}
+
+/* Buttons */
+button {
+  background-color: #2E4A3B;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6FAED9;
+  color: #333; /* dark text so it is readable on the sky blue */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #2E4A3B;
+}
+
+/* Bigger screens layout */
+@media (min-width: 700px) {
+
+  /* Navigation becomes a row */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  /* Header looks nicer on desktop */
+  header {
+    text-align: left;
+    padding: 1.5rem 2rem;
+  }
+
+  header img {
+    float: left;
+    margin-right: 1rem;
+  }
+
+  /* More space on the sides */
+  main {
+    padding: 0 2rem;
+  }
+}
