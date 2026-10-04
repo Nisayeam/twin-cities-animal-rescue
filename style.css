@@ -160,3 +160,37 @@ footer {
     padding: 0 2rem;
   }
 }
+
+/* Quick Volunteer Interest buttons (services page) */
+.interest-btn {
+  margin: 0.3rem 0.3rem 0.3rem 0;
+}
+
+/* The button the user picked stays sky blue */
+.interest-btn.selected {
+  background-color: #6FAED9;
+  color: #333;
+}
+
+#interest-result {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #2E4A3B;
+}
+
+/* Validation messages (contact page) */
+.error {
+  display: block;
+  color: #B00020; /* dark red */
+  margin-top: 0.3rem;
+}
+
+input.invalid, select.invalid, textarea.invalid {
+  border: 2px solid #B00020;
+}
+
+/* Thank you message after a correct form */
+#form-message {
+  font-weight: bold;
+  color: #2E4A3B;
+}
